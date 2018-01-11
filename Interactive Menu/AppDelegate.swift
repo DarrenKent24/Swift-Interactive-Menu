@@ -12,7 +12,33 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var enableAllOrientation:Bool = true
+    var enableLandscapeOrientation:Bool = false
+    var enablePortraitOrientation:Bool = false
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        
+        if !enableAllOrientation{
+            
+            if enablePortraitOrientation{
+                
+                return UIInterfaceOrientationMask.portrait
+                
+            }else if enableLandscapeOrientation{
+                
+                return UIInterfaceOrientationMask.landscape
+                
+            }else{
+                
+                return UIInterfaceOrientationMask.allButUpsideDown
+            }
+            
+        }else{
+            
+            return UIInterfaceOrientationMask.allButUpsideDown
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

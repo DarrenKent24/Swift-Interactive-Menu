@@ -8,20 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		58ED81202007D0BC00648BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ED811F2007D0BC00648BEC /* AppDelegate.swift */; };
-		58ED81222007D0BC00648BEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ED81212007D0BC00648BEC /* ViewController.swift */; };
 		58ED81252007D0BC00648BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58ED81232007D0BC00648BEC /* Main.storyboard */; };
 		58ED81272007D0BC00648BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58ED81262007D0BC00648BEC /* Assets.xcassets */; };
 		58ED812A2007D0BC00648BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58ED81282007D0BC00648BEC /* LaunchScreen.storyboard */; };
+		58ED81382007D14800648BEC /* faq.png in Resources */ = {isa = PBXBuildFile; fileRef = 58ED81322007D14700648BEC /* faq.png */; };
+		58ED81392007D14800648BEC /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 58ED81332007D14800648BEC /* profile.png */; };
+		58ED813A2007D14800648BEC /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 58ED81342007D14800648BEC /* email.png */; };
+		58ED813B2007D14800648BEC /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 58ED81352007D14800648BEC /* menu.png */; };
+		58ED813C2007D14800648BEC /* privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 58ED81362007D14800648BEC /* privacy.png */; };
+		58ED813D2007D14800648BEC /* social.png in Resources */ = {isa = PBXBuildFile; fileRef = 58ED81372007D14800648BEC /* social.png */; };
+		58ED813F2007D40E00648BEC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ED813E2007D40E00648BEC /* GradientView.swift */; };
+		58ED81412007D42E00648BEC /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ED81402007D42E00648BEC /* MenuCell.swift */; };
+		58ED81432007D44A00648BEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ED81422007D44A00648BEC /* HomeViewController.swift */; };
+		58ED81452007D45500648BEC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ED81442007D45500648BEC /* MenuViewController.swift */; };
+		58ED81472007D5C800648BEC /* MenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ED81462007D5C800648BEC /* MenuPresentationController.swift */; };
+		58ED81492007D87B00648BEC /* MenuTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ED81482007D87B00648BEC /* MenuTransitioningDelegate.swift */; };
+		58ED814B2007D8C200648BEC /* MenuAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ED814A2007D8C200648BEC /* MenuAnimatedTransitioning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58ED811C2007D0BC00648BEC /* Interactive Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interactive Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58ED811F2007D0BC00648BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58ED81212007D0BC00648BEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58ED81242007D0BC00648BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58ED81262007D0BC00648BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58ED81292007D0BC00648BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58ED812B2007D0BC00648BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58ED81322007D14700648BEC /* faq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faq.png; sourceTree = "<group>"; };
+		58ED81332007D14800648BEC /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		58ED81342007D14800648BEC /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		58ED81352007D14800648BEC /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		58ED81362007D14800648BEC /* privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = privacy.png; sourceTree = "<group>"; };
+		58ED81372007D14800648BEC /* social.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = social.png; sourceTree = "<group>"; };
+		58ED813E2007D40E00648BEC /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		58ED81402007D42E00648BEC /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		58ED81422007D44A00648BEC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		58ED81442007D45500648BEC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		58ED81462007D5C800648BEC /* MenuPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresentationController.swift; sourceTree = "<group>"; };
+		58ED81482007D87B00648BEC /* MenuTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTransitioningDelegate.swift; sourceTree = "<group>"; };
+		58ED814A2007D8C200648BEC /* MenuAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAnimatedTransitioning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +62,7 @@
 		58ED81132007D0BC00648BEC = {
 			isa = PBXGroup;
 			children = (
+				58ED81312007D13500648BEC /* Images */,
 				58ED811E2007D0BC00648BEC /* Interactive Menu */,
 				58ED811D2007D0BC00648BEC /* Products */,
 			);
@@ -55,13 +80,32 @@
 			isa = PBXGroup;
 			children = (
 				58ED811F2007D0BC00648BEC /* AppDelegate.swift */,
-				58ED81212007D0BC00648BEC /* ViewController.swift */,
 				58ED81232007D0BC00648BEC /* Main.storyboard */,
 				58ED81262007D0BC00648BEC /* Assets.xcassets */,
 				58ED81282007D0BC00648BEC /* LaunchScreen.storyboard */,
 				58ED812B2007D0BC00648BEC /* Info.plist */,
+				58ED81422007D44A00648BEC /* HomeViewController.swift */,
+				58ED81442007D45500648BEC /* MenuViewController.swift */,
+				58ED814A2007D8C200648BEC /* MenuAnimatedTransitioning.swift */,
+				58ED81462007D5C800648BEC /* MenuPresentationController.swift */,
+				58ED81482007D87B00648BEC /* MenuTransitioningDelegate.swift */,
+				58ED81402007D42E00648BEC /* MenuCell.swift */,
+				58ED813E2007D40E00648BEC /* GradientView.swift */,
 			);
 			path = "Interactive Menu";
+			sourceTree = "<group>";
+		};
+		58ED81312007D13500648BEC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				58ED81342007D14800648BEC /* email.png */,
+				58ED81322007D14700648BEC /* faq.png */,
+				58ED81362007D14800648BEC /* privacy.png */,
+				58ED81352007D14800648BEC /* menu.png */,
+				58ED81372007D14800648BEC /* social.png */,
+				58ED81332007D14800648BEC /* profile.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +168,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				58ED812A2007D0BC00648BEC /* LaunchScreen.storyboard in Resources */,
+				58ED81392007D14800648BEC /* profile.png in Resources */,
+				58ED813D2007D14800648BEC /* social.png in Resources */,
+				58ED813A2007D14800648BEC /* email.png in Resources */,
 				58ED81272007D0BC00648BEC /* Assets.xcassets in Resources */,
+				58ED813B2007D14800648BEC /* menu.png in Resources */,
+				58ED81382007D14800648BEC /* faq.png in Resources */,
 				58ED81252007D0BC00648BEC /* Main.storyboard in Resources */,
+				58ED813C2007D14800648BEC /* privacy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58ED81222007D0BC00648BEC /* ViewController.swift in Sources */,
+				58ED813F2007D40E00648BEC /* GradientView.swift in Sources */,
+				58ED81452007D45500648BEC /* MenuViewController.swift in Sources */,
+				58ED81472007D5C800648BEC /* MenuPresentationController.swift in Sources */,
+				58ED814B2007D8C200648BEC /* MenuAnimatedTransitioning.swift in Sources */,
 				58ED81202007D0BC00648BEC /* AppDelegate.swift in Sources */,
+				58ED81492007D87B00648BEC /* MenuTransitioningDelegate.swift in Sources */,
+				58ED81412007D42E00648BEC /* MenuCell.swift in Sources */,
+				58ED81432007D44A00648BEC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XW95U3DQX;
 				INFOPLIST_FILE = "Interactive Menu/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "darren.kent.Interactive-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XW95U3DQX;
 				INFOPLIST_FILE = "Interactive Menu/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "darren.kent.Interactive-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
