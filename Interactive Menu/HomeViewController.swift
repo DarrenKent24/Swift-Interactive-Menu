@@ -48,6 +48,7 @@ class HomeViewController: UIViewController {
         //* 1.2 Increases the velocity.
         let percent = ((translation.x * 1.2) / gesture.view!.bounds.size.width)
         
+        let translationX = abs(translation.x)//Absolute value.
         let translationY = abs(translation.y)//Absolute value.
         
         if gesture.state == .began {
@@ -65,7 +66,7 @@ class HomeViewController: UIViewController {
                 
                 gesture.isEnabled = false
                 
-            }else if percent < 1.0{
+            }else if translationX > 10 && percent < 1.0{
                 
                 iController?.update(percent)
             }
