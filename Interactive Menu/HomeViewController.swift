@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var iController: UIPercentDrivenInteractiveTransition?
+    var iController:UIPercentDrivenInteractiveTransition?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,35 +45,39 @@ class HomeViewController: UIViewController {
         
         let translation = gesture.translation(in: gesture.view)
         
-        //* 1.2 Increases the velocity.
-        let percent = ((translation.x * 1.2) / gesture.view!.bounds.size.width)
+        if translation.x < 0{
+            
+            gesture.setTranslation(CGPoint.zero, in: gesture.view)
+        }
         
-        let translationX = abs(translation.x)//Absolute value.
-        let translationY = abs(translation.y)//Absolute value.
+        //*2.0 Increases the transition speed.
+        let percent = ((translation.x * 2.0) / gesture.view!.bounds.size.width)
+        
+        //For detecting vertical movement.
+        //let translationY = abs(translation.y)//Absolute value.
         
         if gesture.state == .began {
             
             iController = UIPercentDrivenInteractiveTransition()
             MenuTransitioningDelegate.menuTransitioningSingleton.interactionController = iController
             
-            performSegue(withIdentifier: "MenuSegue", sender: self)
+            self.performSegue(withIdentifier: "MenuSegue", sender: self)
             
         } else if gesture.state == .changed {
             
-            //This ends the gesture if there's too much vertical movement.
-            //Set between 50 - 100.
+            //To end the gesture if there's too much vertical movement.
+            /*
             if translationY > 100 {
-                
                 gesture.isEnabled = false
-                
-            }else if translationX > 10 && percent < 1.0{
-                
+            }else{
                 iController?.update(percent)
-            }
+            }*/
+            
+            iController?.update(percent)
             
         }else if gesture.state == .ended || gesture.state == .cancelled{
             
-            if percent > 0.3 {
+            if percent > 0.2 {
                 
                 iController?.finish()
                 

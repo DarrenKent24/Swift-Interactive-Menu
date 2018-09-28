@@ -41,7 +41,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             appDel.enableAllOrientation = false
             appDel.enablePortraitOrientation = true
         }
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -98,11 +97,11 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let translation = gesture.translation(in: gesture.view)
         
-        //* 1.2 Increases the velocity.
-        let percent = ((-translation.x * 1.2) / gesture.view!.bounds.size.width)
+        //*2.0 Increases the transition speed.
+        let percent = ((-translation.x * 2.0) / gesture.view!.bounds.size.width)
         
-        let translationX = abs(translation.x)//Absolute value.
-        let translationY = abs(translation.y)//Absolute value.
+        //For detecting vertical movement.
+        //let translationY = abs(translation.y)//Absolute value.
         
         if gesture.state == .began {
             
@@ -113,20 +112,19 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         } else if gesture.state == .changed {
             
-            //This ends the gesture if there's too much vertical movement.
-            //Set between 50 - 100.
+            //To end the gesture if there's too much vertical movement.
+            /*
             if translationY > 100 {
-                
                 gesture.isEnabled = false
-                
-            }else if translationX > 10 && percent < 1.0{
-                
+            }else{
                 iController?.update(percent)
-            }
+            }*/
+            
+            iController?.update(percent)
             
         }else if gesture.state == .ended || gesture.state == .cancelled{
             
-            if percent > 0.3 {
+            if percent > 0.2 {
                 
                 iController?.finish()
                 
