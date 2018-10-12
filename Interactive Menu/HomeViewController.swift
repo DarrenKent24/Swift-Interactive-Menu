@@ -50,8 +50,8 @@ class HomeViewController: UIViewController {
             gesture.setTranslation(CGPoint.zero, in: gesture.view)
         }
         
-        //*2.0 Increases the transition speed.
-        let percent = ((translation.x * 2.0) / gesture.view!.bounds.size.width)
+        //*1.7 Increases the transition speed.
+        let percent = ((translation.x * 1.7) / gesture.view!.bounds.size.width)
         
         //For detecting vertical movement.
         //let translationY = abs(translation.y)//Absolute value.

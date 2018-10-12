@@ -17,7 +17,7 @@ protocol MenuAnimationDelegate{
 class MenuAnimatedTransitioning: NSObject, UIViewControllerAnimatedTransitioning {
     
     var isPresenting = false
-    var duration:Double = 0.35
+    var duration:Double = 0.4
     var delegate:MenuAnimationDelegate?
     
     var snapshotView:UIView?{
